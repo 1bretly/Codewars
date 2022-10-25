@@ -1,5 +1,3 @@
-
-
 function XO(str) {
   let lowerStr = str.toLowerCase()
   let countX = 0
