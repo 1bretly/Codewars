@@ -12,7 +12,6 @@ function betterThanAverage(classPoints, yourPoints) {
   }
 }
 
-
 // There was a test in your class and you passed it. Congratulations!
 
 // But you're an ambitious person. You want to know if you're better than the average student in your class.
@@ -23,4 +22,3 @@ function betterThanAverage(classPoints, yourPoints) {
 
 // Note:
 // Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
-
