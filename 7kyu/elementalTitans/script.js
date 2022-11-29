@@ -17,6 +17,8 @@ function titanAttack(attack, health, yourElement, theirElement) {
     Water: { Fire: 1.5, Thunder: 0.5, Water: 0.5 },
     Thunder: { Water: 1.5, Earth: 0.5, Thunder: 0.5 },
   }
+
   let battleResult = health - (magic[yourElement][theirElement] || 1) * attack
+
   return [battleResult, battleResult > 0 ? "Run!" : "Attack"]
 }
