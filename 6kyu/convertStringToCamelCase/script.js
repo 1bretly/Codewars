@@ -4,6 +4,7 @@
 // "the-stealth-warrior" gets converted to "theStealthWarrior"
 // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
+// example 1
 function toCamelCase(str) {
   if (str === "") {
     return str
@@ -13,4 +14,9 @@ function toCamelCase(str) {
     return nextLetter[1].toUpperCase()
   })
   return newStr
+}
+
+// example 2
+function toCamelCase(str) {
+  return str.replace(/[_-]\w/gi, (characters) => characters[1].toUpperCase())
 }
