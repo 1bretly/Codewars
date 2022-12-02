@@ -3,10 +3,16 @@
 // C.....m returns 'Escaped!' <-- more than three characters between
 // C...m returns 'Caught!' <-- as there are three characters between the two, the cat can jump.
 
+// example 1
 function catMouse(x) {
   if (x.length > 5) {
     return "Escaped!"
   } else {
     return "Caught!"
   }
+}
+
+// example 2
+function catMouse(x) {
+  return x.length <= 5 ? "Caught!" : "Escaped!"
 }
