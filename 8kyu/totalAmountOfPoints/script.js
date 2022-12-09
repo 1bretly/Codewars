@@ -26,3 +26,13 @@ function points(games) {
   }
   return total
 }
+
+// another example with reduce method
+function points(games) {
+  return games.reduce(
+    (total, eachGame) =>
+      (total +=
+        eachGame[0] > eachGame[2] ? 3 : eachGame[0] === eachGame[2] ? 1 : 0),
+    0
+  )
+}
